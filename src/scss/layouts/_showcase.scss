@@ -1,0 +1,176 @@
+@use '../abstracts/' as a;
+@use 'sass:map';
+
+.showcase-container{
+  background: radial-gradient(circle at center bottom, rgba(a.$primary, .15) 0%, rgba(a.$gradient-2, .1) 42%, rgba(a.$gradient-3, .0) 83%);
+}
+
+.showcase{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr auto;
+  gap: 2rem;
+  padding: 0 1rem;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+#showcase-headline{
+  font-size: map-get(a.$Heading-font-sizes , 1);
+}
+
+.btn-store{
+  width: 100%;
+}
+
+.appstore{
+  display: grid;
+  width: 100%;
+  gap: 1rem;
+
+}
+
+
+.discover-more{ 
+  @include a.display(flex, center, center, 1rem);
+  padding-bottom: 2rem;
+}
+
+.mobiles{
+  display: none;
+  img{
+    width: 100%;
+    object-fit: contain;
+  }
+}
+
+@media (min-width: 768px){
+  #showcase-headline{
+    font-size: map-get(a.$Display-font-sizes , 4);
+  }
+
+  .btn-store{
+    width: 50%;
+    padding: .5rem .3rem;
+  }
+
+  .btn-store-text{
+    small{
+      display:block;
+      
+      &:nth-child(1){
+        font-weight:700;
+        font-size: .5rem;
+      }
+      &:nth-child(2){
+        font-weight:800;
+        font-size: .8rem;
+      }
+    }
+  }
+
+  .showcase{
+    max-width: 720px;
+    margin: 0 auto;
+    gap: 1rem;
+    grid-template-columns: repeat(12, minmax(0 ,1fr));
+    grid-template-rows: 1fr auto;
+  }
+
+  .showcase .display-4{
+    grid-column: 1 / 13;
+    margin: 2rem 0;
+  }
+
+  .showcase-text{
+    grid-column: 1 / 6;
+    grid-row: 3 / 4;
+    text-align: left;
+  }
+
+  .appstore{
+    grid-column: 1 /6;
+    grid-row: 4 / 5;
+    display: flex;
+    gap: 1rem;
+    margin: 2rem 0;
+
+  }
+
+  .btn-store{
+    height: 2.5rem;
+    padding: .4rem;
+    line-height: 80%;
+  }
+
+  .discover-more{
+    grid-column: 1 /6;
+    grid-row: 5 / 6;
+    justify-content: left;
+  }
+
+  .mobiles{
+    display: flex;
+    align-items: end;
+    grid-column: 5 / 13;
+    grid-row: 2 / 7;
+  }
+}
+
+@media (min-width: 1200px){
+  .btn-store{
+    height: 3.25rem;
+    padding: .5rem;
+    line-height: 100%;
+  }
+  
+  .btn-store-text{
+    small{
+      display:block;
+    }
+    small:nth-child(1){
+      font-weight:600;
+      font-size: .6rem;
+    }
+    small:nth-child(2){
+      font-weight:800;
+      font-size: 1.3rem;
+    }
+  }
+
+  .showcase{
+  max-width: 1140px;
+  grid-template-rows: 3rem min-content;
+  }
+  
+  .showcase .display-4{
+    grid-column: 1 / 6;
+    grid-row: 3 / 4;
+    font-size: 3.5rem;
+    text-align: left;
+    margin: 0;
+  }
+
+  .discover-more{
+    grid-column: 1 /6;
+    grid-row: 6 / 7;
+    justify-content: left;
+    margin: 1rem 0;
+  }
+  .showcase-text{
+    grid-row: 4 / 5;
+  }
+  .appstore{
+    grid-row: 5 / 6;
+    margin: 0;
+  }
+
+  .mobiles{
+    padding-top: 5rem;
+    display: flex;
+    align-items: flex-end;
+    grid-column: 6 / 13;
+    grid-row: 2/ 7;
+  }
+
+}
