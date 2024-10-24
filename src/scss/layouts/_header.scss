@@ -2,11 +2,11 @@
 @use 'sass:map';
 @use 'sass:color';
 
-body{
+body {
   position: relative;
 }
 
-header{
+header {
   @include a.margin-auto;
   padding: 0.5rem;
   display: grid;
@@ -18,33 +18,30 @@ header{
   backdrop-filter: blur(8px);
 }
 
-.logo{
+.logo {
   @include a.display(flex, left, center, 0.5rem);
 }
 
-.features{
+.features {
   display: none;
   margin-left: 2rem;
 }
 
-nav{
+nav {
   grid-column: -1;
   @include a.display(flex, right, center, 2rem);
 }
 
-label[for="dark-toggle"]{
+label[for='dark-toggle'] {
   font-weight: map-get(a.$Font-weight, bold);
   display: none;
 }
 
-.btn-s{
+.btn-s {
   display: none;
 }
 
-  
-.mobile-nav{
-  display: none;
-  justify-content: right;
+.mobile-nav {
   width: 15rem;
   position: absolute;
   top: 4.5rem;
@@ -53,26 +50,36 @@ label[for="dark-toggle"]{
   background-color: hsl(from var(--clr-background) h s l / 80%);
   border: 1px solid var(--clr-placeholder);
   border-radius: 1rem;
-  #login{
-    display: block;
+  #login {
+    display: flex;
     box-shadow: a.$shadow-primary-btn;
   }
-  input{
+  input {
     font-size: 1rem;
     outline: 0;
     border-radius: 0.5rem;
     padding: 0.5rem;
     margin-bottom: 0.5rem;
-    border: 1px solid var(--clr-placeholder); 
+    border: 1px solid var(--clr-placeholder);
     box-shadow: a.$shadow-s;
   }
-  
-  input:focus{
+
+  input:focus {
     box-shadow: 0 0 12px a.$primary;
+  }
+
+  .input-error,
+  .input-error:focus {
+    box-shadow: 0 0 12px a.$sys-error;
   }
 }
 
-.mobile-nav-button{
+.flex {
+  display: flex;
+}
+
+.mobile-nav-button {
+  cursor: pointer;
   padding: 0rem;
   fill: var(--clr-body-text);
   background-color: transparent;
@@ -80,62 +87,76 @@ label[for="dark-toggle"]{
   display: grid;
   place-content: center;
 }
-.mobile-nav-button[aria-expanded='false'] .line{
-  transition: 
+.mobile-nav-button[aria-expanded='false'] .line {
+  transition:
     y 200ms ease-in 200ms,
     opacity 0ms 200ms,
-    rotate 200ms ease-in ;
+    rotate 200ms ease-in;
   transform-origin: center;
 }
 
-.mobile-nav-button[aria-expanded='true'] .line{
-  transition: 
+.mobile-nav-button[aria-expanded='true'] .line {
+  transition:
     y 200ms ease-in,
     opacity 0ms 200ms,
     rotate 200ms ease-in 200ms;
-    transform-origin: center;
+  transform-origin: center;
 }
 
-.mobile-nav-button[aria-expanded='true'] :is(.top-bar, .bottom-bar){
+.mobile-nav-button[aria-expanded='true'] :is(.top-bar, .bottom-bar) {
   y: 45;
 }
-.mobile-nav-button[aria-expanded='true'] .top-bar{
+.mobile-nav-button[aria-expanded='true'] .top-bar {
   rotate: 45deg;
 }
-.mobile-nav-button[aria-expanded='true'] .middle-bar{
+.mobile-nav-button[aria-expanded='true'] .middle-bar {
   opacity: 0;
 }
-.mobile-nav-button[aria-expanded='true'] .bottom-bar{
+.mobile-nav-button[aria-expanded='true'] .bottom-bar {
   rotate: -45deg;
 }
 
+.form-signin {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
 
-@media(width > 768px){
-  header{
+  h5 {
+    margin-bottom: 0.6rem;
+  }
+
+  .error {
+    color: a.$sys-error;
+    font-size: 0.8rem;
+    font-weight: bolder;
+    margin-top: 0.2rem;
+  }
+}
+
+@media (width > 768px) {
+  header {
     max-width: 720px;
   }
-  label[for="dark-toggle"]{
+  label[for='dark-toggle'] {
     display: inline;
   }
 }
 
-@media(width > 1200px){
-  header{
+@media (width > 1200px) {
+  header {
     max-width: 1140px;
   }
-  .mobile-nav-button{
+  .mobile-nav-button {
     display: none;
   }
-  .features{
+  .features {
     display: block;
   }
-  .btn-s{
+  .btn-s {
     display: block;
   }
-  label[for="dark-toggle"]{
+  label[for='dark-toggle'] {
     display: inline;
-  }
-  .mobile-nav{
-    display: none;
   }
 }

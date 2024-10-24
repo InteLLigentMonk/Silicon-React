@@ -1,31 +1,43 @@
 @use '../abstracts/' as a;
 
-.subscribe{
+.subscribe {
   align-items: center;
   margin: 1rem;
   padding: 3rem 1rem;
   background-color: var(--clr-background);
-  border-radius: .5rem;
+  border-radius: 0.5rem;
+
+  .error {
+    color: a.$sys-error;
+    font-size: 0.8rem;
+    font-weight: bolder;
+    margin-top: 0.2rem;
+  }
+  .success {
+    color: a.$sys-success;
+    font-size: 1rem;
+    margin-top: 0.2rem;
+  }
 }
 
-.newsletter-logo{
+.newsletter-logo {
   display: flex;
   gap: 1rem;
   align-items: center;
   width: 100%;
 }
 
-#subscribe-desktop{
+#subscribe-desktop {
   display: none;
 }
 
-.newsletter{
+.newsletter {
   display: flex;
   align-items: center;
   position: relative;
 }
 
-.mail-icon{
+.mail-icon {
   display: flex;
   align-items: center;
   color: var(--clr-placeholder);
@@ -35,21 +47,21 @@
   border-radius: 0.3rem 0 0 0.3rem;
 }
 
-.newsletter input{
+.newsletter input {
   border: 0;
   color: var(--clr-muted);
   height: 3rem;
-  margin-block: .6rem;
+  margin-block: 0.6rem;
   border-radius: 0 0.3rem 0.3rem 0;
   width: calc(100%);
 }
-.newsletter input::placeholder{
-  color: var(--clr-placeholder)
+.newsletter input::placeholder {
+  color: var(--clr-placeholder);
 }
-.newsletter input:focus{
+.newsletter input:focus {
   outline: none;
 }
-.newsletter input[type="submit"]{
+.newsletter input[type='submit'] {
   position: absolute;
   top: 0;
   right: 0;
@@ -58,11 +70,11 @@
   font-size: 1rem;
   font-weight: 300;
   padding: 1rem 1.5rem;
-  border-radius: 0 .3rem .3rem 0;
+  border-radius: 0 0.3rem 0.3rem 0;
 }
 
-@media (min-width: 768px){
-  .subscribe{
+@media (min-width: 768px) {
+  .subscribe {
     display: grid;
     justify-content: center;
     gap: 2rem;
@@ -72,11 +84,11 @@
   }
 }
 
-@media (min-width: 1200px){
-  .subscribe{
+@media (min-width: 1200px) {
+  .subscribe {
     max-width: 1140px;
   }
-  #subscribe-desktop{
+  #subscribe-desktop {
     display: block;
   }
 }

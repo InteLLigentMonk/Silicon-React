@@ -22,6 +22,7 @@ function Showcase() {
           <div className="appstore">
             <a
               href="https://www.apple.com/se/store"
+              target="_blank"
               className="btn-l btn-store"
             >
               <img src={appleLogo} alt="Apple appstore" id="apple" />
@@ -32,6 +33,7 @@ function Showcase() {
             </a>
             <a
               href="https://play.google.com/store/"
+              target="_blank"
               className="btn-l btn-store"
             >
               <img src={googleLogo} alt="Google play store" />
