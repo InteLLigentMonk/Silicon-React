@@ -12,12 +12,12 @@ const BrowserRouter = createBrowserRouter([
     errorElement: <NotFound404 />,
   },
   {
-    path: '/contact',
-    element: <Contact />,
-  },
-  {
     path: '/#app-features',
     element: <App />,
+  },
+  {
+    path: '/contact',
+    element: <Contact />,
   },
 ]);
 

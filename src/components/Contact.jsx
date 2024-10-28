@@ -2,6 +2,7 @@ import Header from './Header';
 import ContactUs from './ContactUs';
 import ContactForm from './ContactForm';
 import ContactAdress from './ContactAdress';
+import Footer from './Footer';
 
 function Contact() {
   return (
@@ -11,6 +12,7 @@ function Contact() {
         <ContactUs />
         <ContactForm />
         <ContactAdress />
+        <Footer />
       </main>
     </>
   );
