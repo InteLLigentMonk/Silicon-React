@@ -1,4 +1,3 @@
-
 @use '../abstracts/' as a;
 
 /* Toggle Slider */
@@ -9,7 +8,7 @@
   height: 1.8rem;
 }
 
-.toggle input { 
+.toggle input {
   opacity: 0;
   width: 0;
   height: 0;
@@ -23,39 +22,39 @@
   right: 0;
   bottom: 0;
   background-color: a.$clr-muted;
-  transition: .4s;
+  transition: 0.4s;
 }
 
 .slider:before {
-  font-family: "Font Awesome 5 Free";
+  font-family: 'Font Awesome 5 Free';
   font-weight: 900;
-  font-size: .9rem;
-  color: #dbc900;
+  font-size: 0.9rem;
+  color: a.$primary;
   position: absolute;
-  content: "\f185";
+  content: '\f186';
   display: flex;
   justify-content: center;
   align-items: center;
   height: 1.2rem;
   width: 1.2rem;
-  left: .3rem;
-  bottom: .3rem;
+  left: 0.3rem;
+  bottom: 0.3rem;
   background-color: a.$clr-base;
-  transition: .4s;
+  transition: 0.4s;
 }
 input:checked + .slider {
   background-color: a.$primary;
-  box-shadow: 0 0 .8rem a.$primary;
+  box-shadow: 0 0 0.8rem a.$primary;
 }
 
 input:checked + .slider:before {
   transform: translateX(1.2rem);
-  content: "\f186";
-  color: a.$primary;
+  content: '\f185';
+  color: #dbc900;
 }
 
 .slider.round {
-  border-radius: .9rem;
+  border-radius: 0.9rem;
 }
 
 .slider.round:before {

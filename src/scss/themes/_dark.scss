@@ -1,32 +1,32 @@
 @use '../abstracts/' as *;
 @use 'sass:map';
 
-body:has(#dark-toggle:checked){
+body:has(#dark-toggle:checked) {
   --clr-header: hsla(223, 39%, 7%, 0.3);
   --clr-base: #{$black};
   --clr-background: #{$gray-900};
   --clr-divider: #{$gray-800};
   --clr-heading: #{$white};
   --clr-body-text: #{$white};
- 
-  #apple{
-    filter: invert(.8);
+
+  #apple {
+    filter: invert(0.8);
   }
-  .btn-round{
+  .btn-round {
     background-color: var(--clr-divider);
-    
-    &:hover{
+
+    &:hover {
       background-color: $primary;
     }
   }
-  .navigation-text{
-    color: $white; 
-    
-    &:hover{
+  .navigation-text {
+    color: $white;
+
+    &:hover {
       color: $primary;
     }
   }
-  #accordion li{
+  #accordion li {
     background-color: var(--clr-background);
   }
 }

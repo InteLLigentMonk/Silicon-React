@@ -1,7 +1,11 @@
 @use '../abstracts/colors' as c;
 @use '../abstracts/variables' as v;
 
-.btn-s, .btn-m, .btn-l, .btn-round{
+.btn-s,
+.btn-m,
+.btn-l,
+.btn-round,
+.btn-store {
   display: flex;
   width: max-content;
   align-items: center;
@@ -9,18 +13,18 @@
   gap: 1em;
   line-height: 100%;
   border: none;
+  cursor: pointer;
 }
 
-.btn-s{
+.btn-s {
   padding: 0.56em 1.25em;
   margin: 0;
   border-radius: 0.25em;
   font-size: 0.875rem;
   font-weight: 600;
-
 }
 
-.btn-m{
+.btn-m {
   padding: 0.68em 1.75em;
   margin: 0;
   border-radius: 0.375em;
@@ -29,7 +33,7 @@
   line-height: 100%;
 }
 
-.btn-l{
+.btn-l {
   padding: 0.8em 2em;
   margin: 0;
   border-radius: 0.5em;
@@ -38,47 +42,47 @@
   line-height: 100%;
 }
 
-.btn-primary{
+.btn-primary {
   color: c.$clr-background;
   background-color: c.$primary;
-  &:hover{
+  &:hover {
     background-color: c.$gradient-3;
   }
 }
 
-.btn-store{
-  padding-block: .4rem;
+.btn-store {
+  padding-block: 0.4rem;
   color: var(--clr-background);
   background-color: var(--clr-heading);
   height: 3.25rem;
-  img{
+  img {
     height: 100%;
     object-fit: contain;
   }
-  &-text{
-    small{
-      display:block;
+  &-text {
+    small {
+      display: block;
     }
-    small:nth-child(1){
-      font-weight:600;
-      font-size: .6rem;
+    small:nth-child(1) {
+      font-weight: 600;
+      font-size: 0.6rem;
     }
-    small:nth-child(2){
-      font-weight:600;
+    small:nth-child(2) {
+      font-weight: 600;
       font-size: 1.3rem;
     }
   }
 }
 
-.btn-round{
+.btn-round {
   width: 2.6rem;
   height: 2.6rem;
   background-color: var(--clr-base);
   border-radius: 1.3rem;
   transform: rotate(90deg);
-  
-  &:hover{
+
+  &:hover {
     background-color: c.$primary;
-    color: c.$clr-base
+    color: c.$clr-base;
   }
 }

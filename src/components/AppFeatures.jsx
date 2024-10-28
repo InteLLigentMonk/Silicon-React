@@ -8,7 +8,7 @@ import SmileySymbol from '../assets/smiley-symbol.svg';
 
 function AppFeatures() {
   return (
-    <section className="app-features">
+    <section className="app-features" id="app-features">
       <div className="app-features-heading">
         <h2>App Features</h2>
       </div>

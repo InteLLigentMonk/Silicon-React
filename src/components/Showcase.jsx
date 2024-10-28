@@ -44,7 +44,9 @@ function Showcase() {
             </a>
           </div>
           <div className="discover-more body-text-s">
-            <button id="hero-round-btn" className="btn-round">{`>`}</button>
+            <button id="hero-round-btn" className="btn-round">
+              ►
+            </button>
             <label htmlFor="hero-round-btn">Discorver more</label>
           </div>
           <div className="mobiles">

@@ -8,10 +8,10 @@ function Nav() {
       <nav>
         <Darktoggle />
         <MobileNav />
-        <a href="#" className="btn-s btn-primary">
+        <button className="btn-s btn-primary">
           <i className="fa-regular fa-user"></i>
           <span> Sign in / up</span>
-        </a>
+        </button>
       </nav>
     </>
   );

@@ -9,3 +9,17 @@
   white-space: nowrap;
   width: 1px;
 }
+
+a {
+  color: var(--clr-body-text);
+  text-decoration: none;
+}
+
+a:visited {
+  color: var(--clr-body-text);
+}
+
+a:hover {
+  text-decoration: underline;
+  color: var(--clr-primary);
+}

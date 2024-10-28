@@ -9,7 +9,7 @@ $gray-600: hsl(231, 14%, 63%);
 $gray-700: hsl(234, 14%, 39%);
 $gray-800: hsl(235, 20%, 25%);
 $gray-900: hsl(223, 39%, 7%);
-$black: hsl(0, 0%, 0%);
+$black: hsl(223, 39%, 3%);
 
 // Base colors
 $clr-header: hsla(225, 100%, 98%, 0.3);
@@ -24,10 +24,23 @@ $clr-body-text: $gray-700;
 $clr-navigation: $gray-800;
 $clr-heading: $gray-900;
 
-:root{
+// Brand
+$primary: hsl(239, 84%, 67%);
+$gradient-1: $primary;
+$gradient-2: hsl(258, 90%, 66%);
+$gradient-3: hsl(292, 84%, 61%);
+
+// System
+$sys-error: #ef4444;
+$sys-success: #22c55e;
+$sys-warning: #ffba08;
+$sys-info: #4c82f7;
+
+:root {
   --clr-header: #{$clr-header};
   --clr-base: #{$clr-base};
   --clr-background: #{$clr-background};
+  --clr-primary: #{$primary};
   --clr-secondary: #{$clr-secondary};
   --clr-divider: #{$clr-divider};
   --clr-border: #{$clr-border};
@@ -37,17 +50,3 @@ $clr-heading: $gray-900;
   --clr-navigation: #{$clr-navigation};
   --clr-heading: #{$clr-heading};
 }
-
-
-// Brand
-$primary: hsl(239, 84%, 67%);
-$gradient-1: $primary;
-$gradient-2: hsl(258, 90%, 66%);
-$gradient-3: hsl(292, 84%, 61%);
-
-
-// System
-$sys-error: #EF4444;
-$sys-success: #22C55E;
-$sys-warning: #FFBA08;
-$sys-info: #4C82F7;

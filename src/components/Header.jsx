@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import logo from '../assets/logo.svg';
 import '../scss/main.scss';
 import Nav from './Nav';
@@ -7,13 +8,16 @@ function Header() {
     <>
       <header>
         <div className="logo">
-          <a href="index.html">
+          <Link to="/">
             <img src={logo} alt="Silicon logo" />
-          </a>
+          </Link>
           <h2>Silicon</h2>
-          <a href="#">
-            <div className="features navigation-text">Features</div>
-          </a>
+          <Link to="/#app-features" className="features navigation-text">
+            Features
+          </Link>
+          <Link to="/contact" className="contact navigation-text">
+            Contact
+          </Link>
         </div>
         <Nav />
       </header>
