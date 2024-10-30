@@ -23,3 +23,7 @@ a:hover {
   text-decoration: underline;
   color: var(--clr-primary);
 }
+
+.active[aria-current='page'] {
+  color: var(--clr-primary);
+}

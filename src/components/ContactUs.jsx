@@ -1,14 +1,7 @@
-import { Link } from 'react-router-dom';
-
 function ContactUs() {
   return (
     <div className="contact-container">
       <section className="contact-section">
-        <div className="nav-tree">
-          <Link to="/">Homepage</Link>
-          <div className="arrows">{`»`}</div>
-          <Link to="/contact">Contact</Link>
-        </div>
         <h1>Contact Us</h1>
         <div className="contact-card">
           <div className="contact-card-icon">

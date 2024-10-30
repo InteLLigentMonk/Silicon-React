@@ -1,0 +1,21 @@
+.breadcrumbs {
+  padding-inline: 1rem;
+}
+
+.breadcrumb-list {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+}
+
+.breadcrumb-list i:first-child {
+  padding-right: 0.4rem;
+}
+
+@media (min-width: 768px) {
+  .breadcrumbs {
+    padding-inline: 0rem;
+  }
+}

@@ -10,6 +10,10 @@
   grid-template-columns: 1fr;
   gap: 1rem;
   padding-bottom: 2rem;
+
+  h1 {
+    padding-top: 1rem;
+  }
 }
 
 .nav-tree {
@@ -155,7 +159,7 @@
   }
   .contact-form-container {
     position: absolute;
-    top: 7rem;
+    top: 2rem;
     left: 50%;
     margin: 0rem auto;
     background-color: var(--clr-base);

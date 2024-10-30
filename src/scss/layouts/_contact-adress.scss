@@ -78,7 +78,6 @@
   aspect-ratio: 1;
   background-color: var(--clr-background);
   border-radius: 0.4rem;
-  // color: var(--clr-heading);
   font-size: 1.5rem;
 }
 
@@ -116,7 +115,7 @@
 @media (min-width: 1200px) {
   .contact-adress {
     max-width: 1140px;
-    margin-top: 9rem;
+    margin-top: 11rem;
   }
 
   .adress-wrapper {

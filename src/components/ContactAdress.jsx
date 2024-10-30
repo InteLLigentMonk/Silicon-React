@@ -59,22 +59,22 @@ function ContactAdress() {
           <div className="social-media">
             <a href="http://www.facebook.com" target="_blank">
               <div className="social-media-box">
-                <i class="fa-brands fa-square-facebook"></i>
+                <i className="fa-brands fa-square-facebook"></i>
               </div>
             </a>
             <a href="http://www.x.com" target="_blank">
               <div className="social-media-box">
-                <i class="fa-brands fa-twitter"></i>
+                <i className="fa-brands fa-twitter"></i>
               </div>
             </a>
             <a href="http://www.instagram.com" target="_blank">
               <div className="social-media-box">
-                <i class="fa-brands fa-instagram"></i>
+                <i className="fa-brands fa-instagram"></i>
               </div>
             </a>
             <a href="http://www.youtube.com" target="_blank">
               <div className="social-media-box">
-                <i class="fa-brands fa-youtube"></i>
+                <i className="fa-brands fa-youtube"></i>
               </div>
             </a>
           </div>

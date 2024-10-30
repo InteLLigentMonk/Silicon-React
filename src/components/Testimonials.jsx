@@ -1,6 +1,4 @@
 import { useState, useEffect } from 'react';
-
-import maleAvatar from '../assets/male-avatar.svg';
 import CommentCard from './CommentCard';
 
 const BASE_URL = 'https://win24-assignment.azurewebsites.net/api';
