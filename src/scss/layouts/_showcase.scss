@@ -21,7 +21,7 @@
 }
 
 #showcase-headline {
-  font-size: map-get(a.$Heading-font-sizes, 1);
+  font-size: map.get(a.$Heading-font-sizes, 1);
 }
 
 .btn-store {
@@ -53,7 +53,7 @@
 
 @media (min-width: 768px) {
   #showcase-headline {
-    font-size: map-get(a.$Display-font-sizes, 4);
+    font-size: map.get(a.$Display-font-sizes, 4);
   }
 
   .btn-store {

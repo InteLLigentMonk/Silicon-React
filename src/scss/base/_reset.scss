@@ -1,4 +1,5 @@
 @use '../abstracts/' as a;
+@use 'sass:map';
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
 
 * {
@@ -19,8 +20,8 @@ body {
     'Open Sans',
     'Helvetica Neue',
     sans-serif;
-  font-size: map-get(a.$Body-font-sizes, 'M');
-  font-weight: map-get(a.$Font-weight, 'normal');
+  font-size: map.get(a.$Body-font-sizes, 'M');
+  font-weight: map.get(a.$Font-weight, 'normal');
   line-height: 160%;
   color: var(--clr-body-text);
   background-color: var(--clr-base);

@@ -1,89 +1,99 @@
 @use '../abstracts/' as a;
 @use 'sass:map';
 
-
 /* Heading text styling */
-h1, h2, h3, h4, h5, h6, .display-1, .display-2, .display-3,
- .display-4, .display-5, .display-6{
-  font-weight: map-get(a.$Font-weight , extrabold);
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.display-1,
+.display-2,
+.display-3,
+.display-4,
+.display-5,
+.display-6 {
+  font-weight: map.get(a.$Font-weight, extrabold);
   color: var(--clr-heading);
   line-height: 130%;
- }
+}
 
-h1{
-  font-size: map-get(a.$Heading-font-sizes , 1);
+h1 {
+  font-size: map.get(a.$Heading-font-sizes, 1);
 }
-h2{
-  font-size: map-get(a.$Heading-font-sizes , 2);
+h2 {
+  font-size: map.get(a.$Heading-font-sizes, 2);
 }
-h3{
-  font-size: map-get(a.$Heading-font-sizes , 3);
+h3 {
+  font-size: map.get(a.$Heading-font-sizes, 3);
 }
-h4{
-  font-size: map-get(a.$Heading-font-sizes , 4);
+h4 {
+  font-size: map.get(a.$Heading-font-sizes, 4);
 }
-h5{
-  font-size: map-get(a.$Heading-font-sizes , 5);
+h5 {
+  font-size: map.get(a.$Heading-font-sizes, 5);
 }
-h6{
-  font-size: map-get(a.$Heading-font-sizes , 6);
+h6 {
+  font-size: map.get(a.$Heading-font-sizes, 6);
 }
 
 /* Display Text styling */
-.display-1{
-  font-size: map-get(a.$Display-font-sizes , 1);
+.display-1 {
+  font-size: map.get(a.$Display-font-sizes, 1);
 }
-.display-2{
-  font-size: map-get(a.$Display-font-sizes , 2);
+.display-2 {
+  font-size: map.get(a.$Display-font-sizes, 2);
 }
-.display-3{
-  font-size: map-get(a.$Display-font-sizes , 3);
+.display-3 {
+  font-size: map.get(a.$Display-font-sizes, 3);
 }
-.display-4{
-  font-size: map-get(a.$Display-font-sizes , 4);
+.display-4 {
+  font-size: map.get(a.$Display-font-sizes, 4);
 }
-.display-5{
-  font-size: map-get(a.$Display-font-sizes , 5);
+.display-5 {
+  font-size: map.get(a.$Display-font-sizes, 5);
 }
-.display-6{
-  font-size: map-get(a.$Display-font-sizes , 6);
+.display-6 {
+  font-size: map.get(a.$Display-font-sizes, 6);
 }
 
 /* Body text styling */
 
-.body-text-lead, .body-text-xl, .body-text-l, .body-text-m,
-.body-text-s, .body-text-xs{
-  font-weight: map-get(a.$Font-weight , normal);
+.body-text-lead,
+.body-text-xl,
+.body-text-l,
+.body-text-m,
+.body-text-s,
+.body-text-xs {
+  font-weight: map.get(a.$Font-weight, normal);
 }
 
-.body-text-lead{
-  font-size: map-get(a.$Body-font-sizes , 'Lead');
+.body-text-lead {
+  font-size: map.get(a.$Body-font-sizes, 'Lead');
 }
-.body-text-xl{
-  font-size: map-get(a.$Body-font-sizes , 'XL');
+.body-text-xl {
+  font-size: map.get(a.$Body-font-sizes, 'XL');
 }
-.body-text-l{
-  font-size: map-get(a.$Body-font-sizes , 'L');
+.body-text-l {
+  font-size: map.get(a.$Body-font-sizes, 'L');
 }
-.body-text-m{
-  font-size: map-get(a.$Body-font-sizes , 'M');
+.body-text-m {
+  font-size: map.get(a.$Body-font-sizes, 'M');
 }
-.body-text-s{
-  font-size: map-get(a.$Body-font-sizes , 'S');
+.body-text-s {
+  font-size: map.get(a.$Body-font-sizes, 'S');
 }
-.body-text-xs{
-  font-size: map-get(a.$Body-font-sizes , 'XS');
+.body-text-xs {
+  font-size: map.get(a.$Body-font-sizes, 'XS');
 }
 
 /* Navigation links styling */
-.navigation-text{
+.navigation-text {
   text-decoration: none;
   color: a.$clr-navigation;
-  
-  &:hover{
+
+  &:hover {
     color: a.$primary;
   }
 }
-
-
-
