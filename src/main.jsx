@@ -1,10 +1,12 @@
-import { StrictMode } from 'react';
+import { StrictMode, createContext } from 'react';
 import { createRoot } from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import App from './components/App.jsx';
 import Contact from './views/Contact.jsx';
 import NotFound404 from './components/NotFound404.jsx';
 import MainContent from './components/MainContent.jsx';
+
+export const UserContext = createContext();
 
 const BrowserRouter = createBrowserRouter([
   {
@@ -30,6 +32,8 @@ const BrowserRouter = createBrowserRouter([
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <RouterProvider router={BrowserRouter} />
+    <UserContext.Provider value={{ name: 'Tobbe' }}>
+      <RouterProvider router={BrowserRouter} />
+    </UserContext.Provider>
   </StrictMode>
 );

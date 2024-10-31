@@ -1,9 +1,13 @@
+import { useContext } from 'react';
+import { UserContext } from '../main';
 import { Link, NavLink } from 'react-router-dom';
 import logo from '../assets/logo.svg';
 import '../scss/main.scss';
 import Nav from './Nav';
 
 function Header() {
+  const user = useContext(UserContext);
+
   return (
     <>
       <header>
@@ -34,6 +38,9 @@ function Header() {
             Contact
           </NavLink>
         </div>
+        {user.name && (
+          <span className="welcome-user">Welcome, {user.name}</span>
+        )}
         <Nav />
       </header>
     </>
