@@ -2,7 +2,7 @@ import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import App from './components/App.jsx';
-import Contact from './components/Contact.jsx';
+import Contact from './views/Contact.jsx';
 import NotFound404 from './components/NotFound404.jsx';
 import MainContent from './components/MainContent.jsx';
 

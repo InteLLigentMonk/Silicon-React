@@ -10,7 +10,7 @@ body:has(#dark-toggle:checked) {
   --clr-body-text: #{$white};
 
   #apple {
-    filter: invert(0.8);
+    filter: invert(0.85);
   }
   .btn-round {
     background-color: var(--clr-divider);

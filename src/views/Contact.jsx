@@ -1,6 +1,6 @@
-import ContactUs from './ContactUs';
-import ContactForm from './ContactForm';
-import ContactAdress from './ContactAdress';
+import ContactUs from '../components/ContactUs';
+import ContactForm from '../components/ContactForm';
+import ContactAdress from '../components/ContactAdress';
 
 function Contact() {
   return (
