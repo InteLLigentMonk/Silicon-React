@@ -87,7 +87,7 @@ function ContactForm() {
 
   return (
     <section className="contact-form-container">
-      <h2>Get Online Consutltation</h2>
+      <h2>Get Online Consultation</h2>
       <form onSubmit={handleSubmit} className="contact-form">
         <div className="form-group">
           <label htmlFor="name">Full Name</label>
